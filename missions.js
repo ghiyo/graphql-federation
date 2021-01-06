@@ -5,9 +5,6 @@ const fetch = require("node-fetch");
 const port = 4002;
 const apiUrl = 'http://localhost:3000';
 
-// TODO: Why is there @key directive on the Astronaut typeDef but not for Mission?
-// TODO: Why is the missions field added to the "extend type Astronaut" on 
-//       this service and not on the Astronaut service? (is it because of convinience?)
 const typeDefs = gql`
   type Mission {
     id: ID!
